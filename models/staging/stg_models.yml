@@ -1,0 +1,76 @@
+version: 2
+
+models:
+  - name: stg_order_items
+    description: "Model for recording order_items"
+    columns:
+      - name: unique_order_id
+        description: "Primary key, unique identifier for each order."
+        tests:
+          - unique
+          - not_null
+
+
+  - name: stg_brands
+    description: "Model for brands"
+    columns:
+      - name: brand_id
+        description: "Primary key, unique identifier for each brand_id"
+        tests:
+          - unique
+          - not_null
+
+  - name: stg_categories
+    description: "Model for categories"
+    columns:
+      - name: category_id
+        description: "Primary key, unique identifier for each category."
+        tests:
+          - unique
+          - not_null
+    
+  - name: stg_customers
+    description: "Model for customer_id"
+    columns:
+      - name: customer_id
+        description: "Primary key, unique identifier for each customer."
+        tests:
+          - unique
+          - not_null
+  
+
+  - name: stg_orders
+    description: "Model for orders"
+    columns:
+      - name: order_id
+        description: "Primary key, unique identifier for each order."
+        tests:
+          - unique
+          - not_null
+  
+  - name: stg_products
+    description: "Model for products"
+    columns:
+      - name: product_id
+        description: "Primary key, unique identifier for each product"
+        tests:
+          - unique
+          - not_null
+
+  - name: stg_staffs
+    description: "Model for staff"
+    columns:
+      - name: staff_id
+        description: "Primary key, unique identifier for each staff member."
+        tests:
+          - unique
+          - not_null
+  
+  - name: stg_stores
+    description: "Model for stores"
+    columns:
+      - name: store_id
+        description: "Primary key, unique identifier for each store."
+        tests:
+          - unique
+          - not_null
